@@ -166,12 +166,10 @@ let store={
                   A("Bravo","2 lbs hp","2 lbs hp",""),
                   A("Pedro","¼ lb hp","¼ lb hp","")]},
   field3:       {notes:"",   animals:[
-                  A("Gwen","3 lbs hp","3 lbs hp",""),
                   A("Dandy","½ lb hp","½ lb hp",""),
                   A("Tally","3 lbs Sentinel DRY","3 lbs Sentinel DRY","⚠️ DRY feed only")]},
   field4:       {notes:"",   animals:[
-                  A("Jasmine","¼ lb hp","","AM only"),
-                  A("Dallas","2 lbs complete + 2 lbs hp","2 lbs complete + 2 lbs hp","")]},
+                  A("Jasmine","¼ lb hp","","AM only")]},
   field5:       {notes:"⭐ Soak the minis @ PM feed — no supps!", animals:[
                   A("Dash","¼ lb hp","","AM only"),
                   A("Emmett","¼ lb hp","","AM only"),
@@ -218,8 +216,6 @@ function buildMap(){
   // White Horse Drive road
   mk("rect",{x:0,y:93.2,width:100,height:6.8,fill:"#26221a"},svg);
   mt("WHITE HORSE DRIVE",{"text-anchor":"middle","font-size":"2","font-family":"Georgia,serif",fill:"#6a6040",x:50,y:97.2},svg);
-  // Driveway
-  mk("rect",{x:33.8,y:75,width:2.2,height:18.2,fill:"#26221a"},svg);
 
   Object.entries(AREAS).forEach(([id,a])=>{
     const isSel=selArea===id;
